@@ -28,4 +28,4 @@ Guess the Word is a simple JavaScript-based game where players try to guess a ra
 
 ## Credits
 
-This game is created by [Your Name].
+This game is created by Elzero Web School.
