@@ -26,6 +26,10 @@ Guess the Word is a simple JavaScript-based game where players try to guess a ra
 - CSS
 - JavaScript
 
+## Website
+
+You can play the game online at [GitHub Pages](https://abdulaziz-m895.github.io/Guess-the-Word-Game/).
+
 ## Credits
 
-This game is created by Elzero Web School.
+This game is created by [ElzeroWebSchool].
