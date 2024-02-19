@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1></h1>
+    <div class="difficulty">
+      <h1>Select Difficulty:</h1>
+      <div class="difficulty-buttons">
+        <button data-number="8" data-hint="3">Easy</button>
+        <button data-number="6" data-hint="2">Normal</button>
+        <button data-number="4" data-hint="1">Hard</button>
+      </div>
+    </div>
+    <div class="guess-game">
+      <div class="game-area">
+        <div class="inputs"></div>
+        <div class="control">
+          <button class="check">Check Word</button>
+          <button class="hint">
+            Hint <span>&lbbrk; <span></span> &rbbrk;</span>
+          </button>
+        </div>
+      </div>
+      <div class="message one"></div>
+      <div class="key-colors">
+        <h2>Key Colors</h2>
+        <div class="key-color">
+          <div class="key in-place"></div>
+          <div class="key-text">Letter Is Correct and In Place</div>
+        </div>
+        <div class="key-color">
+          <div class="key not-in-place"></div>
+          <div class="key-text">Letter Is Correct But Not In Place</div>
+        </div>
+        <div class="key-color">
+          <div class="key no"></div>
+          <div class="key-text">Letter Is Wrong</div>
+        </div>
+      </div>
+    </div>
+    <div class="message two"></div>
+    <footer>
+      <a
+        href="https://elzero.org/tutorials-guess-the-word-game/"
+        target="_blank"
+      ></a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
