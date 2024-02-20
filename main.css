@@ -39,167 +39,156 @@ h1:first-of-type {
   display: none;
   align-items: flex-start;
   justify-content: space-evenly;
-  .game-area {
-    .inputs {
-      > div {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        span {
-          font-size: 30px;
-          margin-right: 15px;
-          font-weight: bold;
-        }
-      }
-      .disabled-inputs {
-        opacity: 0.5;
-        pointer-events: none;
-      }
-      input {
-        margin: 0 5px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        font-size: 50px;
-        caret-color: var(--primary-color);
-        background: white;
-        border: none;
-        border-bottom: 3px solid #333;
-        /* & => parent selector */
-        &:focus {
-          outline: none;
-        }
-        &.yes-in-place {
-          background-color: #18ba89;
-          border: #18ba89;
-          color: white;
-        }
-        &.not-in-place {
-          background-color: #f89e13;
-          border: #f89e13;
-          color: white;
-        }
-        &.no {
-          background-color: #27303f;
-          border: #27303f;
-          color: white;
-        }
-      }
-    }
-    .control {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 500px;
-      margin: 30px auto;
-      gap: 10px;
-      .check {
-        background-color: var(--primary-color);
-        flex: 1;
-      }
-      .hint {
-        background-color: #009688;
-        width: fit-content;
-      }
-      button {
-        border: none;
-        font-size: 25px;
-        padding: 15px 20px;
-        border-radius: 6px;
-        color: white;
-        cursor: pointer;
-        font-weight: bold;
-      }
-      button:disabled {
-        background-color: black;
-        opacity: 0.4;
-        cursor: no-drop;
-      }
-      button:active {
-        transform: scale(0.98);
-      }
-    }
-  }
-  .key-colors {
-    .key-color {
-      display: flex;
-      align-items: center;
-      padding: 15px;
-      background-color: white;
-      margin-bottom: 10px;
-      .key {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin-right: 10px;
-        &.in-place {
-          background-color: #18ba89;
-        }
-        &.not-in-place {
-          background-color: #f89e13;
-        }
-        &.no {
-          background-color: #27303f;
-        }
-      }
-      .key-text {
-        font-size: 20px;
-        font-weight: bold;
-      }
-    }
-  }
+}
+.game-area .inputs > div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-area .inputs > div span {
+  font-size: 30px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.game-area .inputs .disabled-inputs {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.game-area .inputs input {
+  margin: 0 5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 50px;
+  caret-color: var(--primary-color);
+  background: white;
+  border: none;
+  border-bottom: 3px solid #333;
+}
+.game-area .inputs input:focus {
+  outline: none;
+}
+.game-area .inputs input.yes-in-place {
+  background-color: #18ba89;
+  border: #18ba89;
+  color: white;
+}
+.game-area .inputs input.not-in-place {
+  background-color: #f89e13;
+  border: #f89e13;
+  color: white;
+}
+.game-area .inputs input.no {
+  background-color: #27303f;
+  border: #27303f;
+  color: white;
+}
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 30px auto;
+  gap: 10px;
+}
+.control .check {
+  background-color: var(--primary-color);
+  flex: 1;
+}
+.control .hint {
+  background-color: #009688;
+  width: fit-content;
+}
+.control button {
+  border: none;
+  font-size: 25px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.control button:disabled {
+  background-color: black;
+  opacity: 0.4;
+  cursor: no-drop;
+}
+.control button:active {
+  transform: scale(0.98);
+}
+.key-colors .key-color {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.key-colors .key {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.key-colors .key.in-place {
+  background-color: #18ba89;
+}
+.key-colors .key.not-in-place {
+  background-color: #f89e13;
+}
+.key-colors .key.no {
+  background-color: #27303f;
+}
+.key-text {
+  font-size: 20px;
+  font-weight: bold;
 }
 .message {
   text-align: center;
   font-weight: bold;
   font-size: 30px;
   margin: 15px 0 30px;
-  span {
-    font-weight: bold;
-    display: block;
-    font-size: 50px;
-    color: var(--primary-color);
-    text-transform: capitalize;
-    margin-top: 10px;
-  }
-  p {
-    margin: 0;
-  }
-  p:last-of-type {
-    font-size: 15px;
-  }
+}
+.message span {
+  font-weight: bold;
+  display: block;
+  font-size: 50px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.message p {
+  margin: 0;
+}
+.message p:last-of-type {
+  font-size: 15px;
 }
 footer {
   text-align: center;
   padding: 20px;
   width: 100%;
   background-color: #333;
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
-  a {
-    color: white;
-    /* text-decoration: none; */
-  }
+}
+footer a {
+  color: white;
 }
 .difficulty-buttons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  button {
-    border: none;
-    font-size: 30px;
-    padding: 15px 20px;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: var(--primary-color);
-  }
-  button:active {
-    transform: scale(0.98);
-  }
+}
+.difficulty-buttons button {
+  border: none;
+  font-size: 30px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: var(--primary-color);
+}
+.difficulty-buttons button:active {
+  transform: scale(0.98);
 }
 
 @media (max-width: 970px) {
@@ -210,34 +199,25 @@ footer {
   }
 }
 @media (max-width: 767px) {
-  .guess-game {
-    .game-area {
-      .inputs {
-        > div {
-          span {
-            font-size: 25px;
-          }
-        }
-        input {
-          width: 40px;
-          height: 40px;
-          font-size: 35px;
-        }
-      }
-      .control {
-        width: 100%;
-        button {
-          font-size: 20px;
-          padding: 10px 15px;
-        }
-      }
-    }
-    
+  .inputs > div span {
+    font-size: 25px;
+  }
+  .inputs input {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+  }
+  .control {
+    width: 100%;
+  }
+  .control button {
+    font-size: 20px;
+    padding: 10px 15px;
   }
   .one {
-      display: block;
-    }
-    .two {
-      display: none;
-    }
+    display: block;
+  }
+  .two {
+    display: none;
+  }
 }
