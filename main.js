@@ -66,7 +66,6 @@ function shuffle(array) {
   return array;
 }
 
-// Shuffle the array of words
 shuffle(words);
 
 let randomIndex = Math.floor(Math.random() * words.length);
