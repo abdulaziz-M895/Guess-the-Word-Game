@@ -331,8 +331,18 @@ function handelGuesses() {
   }
 }
 
+const hintMessage = document.createElement("p");
+hintMessage.innerHTML = `you'll need to clear your guesses before using hints.`;
+hintMessage.style.cssText = "margin: 5px 0; display: none;";
+document.querySelector(".game-area").append(hintMessage);
+
 function getHint() {
-  if (numbersOfHints > 0) {
+  const enabledInputs = document.querySelectorAll("input:not([disabled])");
+  const emptyEnabledInputs = Array.from(enabledInputs).filter(
+    (input) => input.value === ""
+  );
+
+  if (numbersOfHints > 0 && emptyEnabledInputs.length !== 0) {
     numbersOfHints--;
     document.querySelector(".hint span span").innerHTML = numbersOfHints;
   }
@@ -342,11 +352,6 @@ function getHint() {
     hintButton.disabled = true;
   }
 
-  const enabledInputs = document.querySelectorAll("input:not([disabled])");
-  const emptyEnabledInputs = Array.from(enabledInputs).filter(
-    (input) => input.value === ""
-  );
-
   if (emptyEnabledInputs.length > 0) {
     const randomIndex = Math.floor(Math.random() * emptyEnabledInputs.length);
     const randomInput = emptyEnabledInputs[randomIndex];
@@ -354,7 +359,10 @@ function getHint() {
 
     if (indexToFill !== -1) {
       randomInput.value = wordToGuess[indexToFill].toUpperCase();
+      hintMessage.style.display = "none";
     }
+  } else if (emptyEnabledInputs.length === 0) {
+    hintMessage.style.display = "block";
   }
 }
 
