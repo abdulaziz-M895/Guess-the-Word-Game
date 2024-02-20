@@ -197,14 +197,20 @@ footer a {
     align-items: center;
     gap: 20px;
   }
+  .one {
+    display: block;
+  }
+  .two {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .game-area .inputs > div span {
     font-size: 18px;
   }
   .game-area .inputs input {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     font-size: 35px;
   }
   .control {
@@ -213,11 +219,5 @@ footer a {
   .control button {
     font-size: 20px;
     padding: 10px 15px;
-  }
-  .one {
-    display: block;
-  }
-  .two {
-    display: none;
   }
 }
