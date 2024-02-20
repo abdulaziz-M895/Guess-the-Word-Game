@@ -206,12 +206,13 @@ footer a {
 }
 @media (max-width: 767px) {
   .game-area .inputs > div span {
-    font-size: 18px;
+    font-size: 17px;
   }
   .game-area .inputs input {
-    width: 35px;
-    height: 35px;
-    font-size: 35px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    margin: 0 3px;
   }
   .control {
     width: 100%;
