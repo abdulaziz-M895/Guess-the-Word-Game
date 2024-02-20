@@ -32,4 +32,4 @@ You can play the game online at [GitHub Pages](https://abdulaziz-m895.github.io/
 
 ## Credits
 
-This game is created by [ElzeroWebSchool].
+This game is created by Me inspired by [Elzero Web School](https://github.com/ElzeroWebSchool).
