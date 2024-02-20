@@ -199,10 +199,10 @@ footer a {
   }
 }
 @media (max-width: 767px) {
-  .inputs > div span {
-    font-size: 25px;
+  .game-area .inputs > div span {
+    font-size: 18px;
   }
-  .inputs input {
+  .game-area .inputs input {
     width: 40px;
     height: 40px;
     font-size: 35px;
