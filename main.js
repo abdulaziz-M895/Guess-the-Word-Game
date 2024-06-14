@@ -253,6 +253,9 @@ function handelGuesses() {
         winningPhrases[Math.floor(Math.random() * winningPhrases.length)]
       }</p> <p>Reload to Play Again</p>`;
     })
+    messageAreas.scrollIntoView({
+  behavior: "smooth",
+});
 
     // Disable input fields after successful guess
     let allTries = document.querySelectorAll(".inputs > div");
